@@ -1,0 +1,16 @@
+type AuthorResponse {
+    id: ID!
+    name: String!
+    books: [BookResponse!]!
+    primaryBook: BookResponse
+}
+
+type BookResponse  {
+    id: ID!
+    title: String!
+}
+
+type Query {
+    authors: [AuthorResponse!]!
+    authorsWithDataLoader: [AuthorResponse!]!
+}

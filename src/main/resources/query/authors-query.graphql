@@ -1,0 +1,14 @@
+query {
+    authors {
+        id
+        name
+        books {
+            id
+            title
+        }
+        primaryBook {
+            id
+            title
+        }
+    }
+}

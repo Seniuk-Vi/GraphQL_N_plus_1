@@ -1,0 +1,14 @@
+query {
+    authorsWithDataLoader {
+        id
+        name
+        books {
+            id
+            title
+        }
+        primaryBook {
+            id
+            title
+        }
+    }
+}
